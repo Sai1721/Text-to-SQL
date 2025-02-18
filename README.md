@@ -1,6 +1,5 @@
 # Natural Language to SQL Query Generator using Gemini API
 
-```markdown
 This Streamlit application uses Google Gemini API to convert natural language questions into SQL queries and fetch data from a SQLite database.
 
 ## Demo
