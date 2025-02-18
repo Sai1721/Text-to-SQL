@@ -3,7 +3,7 @@
 This Streamlit application uses Google Gemini API to convert natural language questions into SQL queries and fetch data from a SQLite database.
 
 ## Demo
-![Demo Video](demo.webm)
+![Demo Video](demo.gif)
 
 ## Features
 - Converts English questions into SQL queries using Google Gemini API.
