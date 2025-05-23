@@ -79,7 +79,7 @@ If you'd like to collaborate or request access for academic/research purposes, p
 
 **Sairaman Mathivelan**  
 President, Dept. of Artificial Intelligence & Data Science  
-📫 [LinkedIn](https://www.linkedin.com/in/sairaman-mathivelan) • ✉️ sairaman@example.com
+📫 [LinkedIn](https://www.linkedin.com/in/sairaman-mathivelan-3304b626b/) • ✉️ sairamanmathivelan@gmail.com
 
 ---
 
