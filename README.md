@@ -8,7 +8,7 @@
 
 Watch a short demo video below to see it in action:  
 
-<video controls src="full_demo.mp4" title="Title"></video>
+![issue](full_demo.gif)
 ---
 
 ## 🚀 Features
