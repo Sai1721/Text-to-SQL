@@ -1,87 +1,89 @@
-# Natural Language to SQL Query Generator using Gemini API
+# 💬 Natural Language to SQL Query Generator (with Gemini AI + MySQL)
 
-This Streamlit application uses Google Gemini API to convert natural language questions into SQL queries and fetch data from a SQLite database.
+> A Smart AI-powered system that converts human language questions into SQL queries and retrieves relevant data from a MySQL database. Built using Google Gemini Pro and Streamlit.
 
-## Demo
-![Demo Video](demo.gif)
+---
 
-## Features
-- Converts English questions into SQL queries using Google Gemini API.
-- Retrieves data from a SQLite database (`student.db`).
-- Simple and interactive UI using Streamlit.
+## 🎥 Demo
 
-## Tech Stack
-- Python
-- Streamlit
-- Google Gemini API
-- SQLite
-- `google-generativeai` (Gemini API)
+Watch a short demo video below to see it in action:  
 
-## Installation
+<video controls src="full_demo.mp4" title="Title"></video>
+---
 
-### Prerequisites
-Ensure you have the following installed:
-- Python (>=3.8)
-- A SQLite database (`student.db` with `STUDENT` table)
-- A Google API key for Gemini
+## 🚀 Features
 
-### Clone the Repository
-```sh
-git clone https://github.com/Sai1721/Text-to-SQL
-```
+- ✅ **Gemini Pro Integration** – Uses Google's Gemini 2.0 Flash for converting natural language to optimized SQL queries.
+- ✅ **MySQL Backend Support** – Connects securely to a MySQL database.
+- ✅ **JOIN Handling** – Supports complex queries with proper JOIN logic.
+- ✅ **Dynamic Query Execution** – Executes generated queries in real-time.
+- ✅ **Beautiful Result Display** – Tabular view with download as CSV option.
+- ✅ **Secure Admin Panel** – Password-protected panel to upload data via CSV.
+- ✅ **Auto Query Log** – Stores user questions and generated queries in a log.
 
-### Set Up a Virtual Environment (Optional but Recommended)
-```sh
-python -m venv venv
-source venv/bin/activate  # On macOS/Linux
-venv\Scripts\activate  # On Windows
-```
+---
 
-### Install Dependencies
-```sh
-pip install -r requirements.txt
-```
+## 🛠️ Tech Stack
 
-## Configuration
+| Technology     | Purpose                          |
+|----------------|----------------------------------|
+| Streamlit      | Frontend Interface               |
+| Google Gemini  | AI Query Generator               |
+| MySQL          | Backend Database                 |
+| Python         | Logic, Execution, Integration    |
+| .env           | Secures environment variables    |
 
-### Setting Up Environment Variables
-1. Create a `.env` file in the project directory.
-2. Add your Google API key:
-```ini
-GOOGLE_API_KEY=your_google_api_key_here
-```
+---
 
-## Running the Application
-```sh
-streamlit run app.py
-```
+## 📁 Project Structure
 
-## File Structure
-```
-📂 Text-to-SQL
-│── 📄 app.py          # Main Streamlit application
-│── 📄 requirements.txt # Dependencies
-│── 📄 .env            # Environment variables
-│── 📄 student.db      # SQLite database
-│── 📄 README.md       # Project documentation
-```
+📦project-root/
+├── app.py # Main Streamlit app
+├── agent.py # Gemini API interaction
+├── .env # Environment variables
+├── requirements.txt # Python dependencies
+├── query_log.csv # Logs of past queries
+├── uploads/ # Admin-uploaded CSVs
+└── README.md # This file
 
-## Deployment on Streamlit Community Cloud
 
-1. **Push the project to GitHub**:
-   ```sh
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
-2. **Go to [Streamlit Community Cloud](https://share.streamlit.io/)**.
-3. **Sign in** and click on "New App".
-4. **Connect your GitHub repository**.
-5. **Select the `app.py` file** as the entry point.
-6. **Click 'Deploy'**.
+---
 
-## Example Queries
-| User Question | Generated SQL Query |
-|--------------|--------------------|
-| How many students are there? | `SELECT COUNT(*) FROM STUDENT;` |
-| Show students in Data Science class. | `SELECT * FROM STUDENT WHERE CLASS='Data Science';` |
+## 🔒 Security Notes
+
+- API keys and database credentials are securely loaded using `.env` files.
+- Admin data upload panel is password-protected.
+- No sensitive data or internal SQL logic is exposed in this repo.
+
+---
+
+## 🧪 Sample Use Cases
+
+- 🔢 Average marks of each class  
+- 🧑‍🏫 List of students and instructors  
+- 📅 Who was absent on a given date  
+- 📊 Total students in each section  
+- ✍️ Update a student name using plain English
+
+---
+
+## ⚙️ Setup Instructions
+
+> ⚠️ Codebase is **not exposed** for privacy and intellectual property reasons.
+
+If you'd like to collaborate or request access for academic/research purposes, please reach out via email.
+
+---
+
+## 🤝 Author
+
+**Sairaman Mathivelan**  
+President, Dept. of Artificial Intelligence & Data Science  
+📫 [LinkedIn](https://www.linkedin.com/in/sairaman-mathivelan) • ✉️ sairaman@example.com
+
+---
+
+## 📄 License
+
+This project is licensed for demo and educational purposes.  
+For commercial use or source access, please contact the author.

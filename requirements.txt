@@ -2,3 +2,4 @@ streamlit
 python-dotenv
 google-generativeai
 sqlite-utils
+mysql-connector-python

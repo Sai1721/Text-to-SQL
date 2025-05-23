@@ -1,0 +1,14 @@
+.env
+
+app.py
+
+samples/attendance_sample.csv
+samples/course_sample.csv
+samples/student_sample.csv
+
+demo.gif
+sql.py
+studen.db
+
+full_demo.gif
+full_demo.webm

@@ -1,0 +1,62 @@
+“List student names and their instructors.”
+→ Should generate a JOIN between STUDENT and COURSE.
+
+“Who was absent on 2024-03-15?”
+→ Should query ATTENDANCE.
+
+“Show each class with its average marks and instructor name.”
+→ Gemini may now generate a JOIN with GROUP BY.
+
+“List student names with their course instructor”
+
+“Show classes and the number of students in each”
+
+“Give average marks for students taught by instructor X”
+
+“How many students were absent on a specific date?”
+
+
+🟩 SELECT Queries
+These will retrieve data:
+
+"Show all student names and their marks"
+➤ SELECT NAME, MARKS FROM STUDENT;
+
+"Provide the average marks of all students class wise"
+➤ SELECT CLASS, AVG(MARKS) FROM STUDENT GROUP BY CLASS;
+
+"List all students and their instructors"
+➤ SELECT STUDENT.NAME, COURSE.INSTRUCTOR FROM STUDENT JOIN COURSE ON STUDENT.CLASS = COURSE.CLASS;
+
+"Show who was absent on 2024-03-15"
+➤ SELECT NAME FROM ATTENDANCE WHERE DATE = '2024-03-15' AND STATUS = 'Absent';
+
+🟨 UPDATE Queries
+These will modify your data:
+
+"Change the name of student from Alice Smith to Alicia Smith"
+➤ UPDATE STUDENT SET NAME = 'Alicia Smith' WHERE NAME = 'Alice Smith';
+
+"Update marks of John Doe to 95"
+➤ UPDATE STUDENT SET MARKS = 95 WHERE NAME = 'John Doe';
+
+"Change instructor of class 10A to Dr. Raman"
+➤ UPDATE COURSE SET INSTRUCTOR = 'Dr. Raman' WHERE CLASS = '10A';
+
+🟥 DELETE Queries
+These will remove data:
+
+"Remove student named Robert Brown"
+➤ DELETE FROM STUDENT WHERE NAME = 'Robert Brown';
+
+"Delete all attendance records on 2024-03-10"
+➤ DELETE FROM ATTENDANCE WHERE DATE = '2024-03-10';
+
+🟦 INSERT Queries
+These will add new data:
+
+"Add a new student John Wayne in class 10B with 85 marks"
+➤ INSERT INTO STUDENT (NAME, CLASS, SECTION, MARKS) VALUES ('John Wayne', '10B', 'B', 85);
+
+"Insert a course Physics for class 10B taught by Ms. Elena"
+➤ INSERT INTO COURSE (CLASS, COURSE_NAME, INSTRUCTOR) VALUES ('10B', 'Physics', 'Ms. Elena');
